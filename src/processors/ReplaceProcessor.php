@@ -50,7 +50,7 @@ require_once dirname(__FILE__) . '/InsertProcessor.php';
  */
 class ReplaceProcessor extends InsertProcessor {
 
-    public function process($tokenList) {
+    public function process($tokenList, $token_category = 'INSERT') {
         return parent::process($tokenList, 'REPLACE');
     }
 
